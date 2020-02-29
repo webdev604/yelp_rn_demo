@@ -6,7 +6,7 @@ import Root from './app/containers/Root/Root';
 
 const customFetch = createFetch(fetch);
 export const store = createStore({fetch: customFetch});
-
+console.disableYellowBox = true;
 export default class App extends React.Component {
   render() {
     return (
